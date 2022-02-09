@@ -1,11 +1,14 @@
 body {
   background-image: url(/img/sfondo-footer-radice-labirinto-2018.jpg);
   background-attachment: fixed;
+  /* DA METTERE A POSTO LA RIPETIZIONE DELL'IMMAGINE SENNO CAMBIARE IMMAGINE */
 }
 
 #logo {
   text-align: center;
   display: block;
+  opacity: 0.8;
+  margin-top: 5px;
 }
 
 h4,
@@ -27,15 +30,17 @@ ul {
 
 li {
   display: inline-block;
+  
 }
 
 li a {
-  display: flex;
+  display: block;
   color: #ffffff;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   transition-duration: 0.5s;
   opacity: 0.7;
+  font-size: 22px;
 }
 
 li:hover {
@@ -50,15 +55,42 @@ li a:hover {
   display: flex;
   padding-bottom: 30px;
   padding-top: 30px;
+  
+  
 }
 
 .box {
-  padding: 10px;
+  padding: auto;
+  margin: auto;
+  
 }
 
 .box img {
   border: 5px solid #e9cfae;
+  height: 400px;
+  
 }
+
+.scatolepiccole{
+  display:flex;
+  padding: 30px;
+  flex-direction: row;
+  
+}
+
+.scatolepiccole img{
+  height: 250px;
+  border: 5px solid #e9cfae;
+  
+  }
+
+  .boxpiccole{
+    
+  }
+  
+ 
+  
+
 
 /* Media queries */
 
@@ -66,4 +98,18 @@ li a:hover {
   body{
     background-attachment: fixed;
   }
+}
+/* Laptop */
+@media only screen and (min-width: 992px) {
+  body{
+    background-attachment: fixed;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+ body{
+    background-attachment: fixed;
+ }
 }
